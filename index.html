@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>欣生高雄｜濫用藥物尿液檢驗服務 - 欣生生物科技股份有限公司高雄分公司</title>
+<meta name="description" content="欣生高雄提供企業與機關濫用藥物尿液初步篩檢及確認檢驗服務，歡迎洽詢檢驗項目與送驗安排。">
+<link rel="canonical" href="https://yuming5459-art.github.io/xinsheng-kaohsiung/">
+<style>
+  :root{
+    --navy:#0B3D66;
+    --navy-dark:#07263F;
+    --teal:#2E8B9A;
+    --teal-light:#E6F2F4;
+    --bg:#FFFFFF;
+    --text:#1F2B33;
+    --muted:#6B7A85;
+    --border:#E1E7EA;
+    --radius:10px;
+    --maxw:1120px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.7;
+  }
+  a{color:inherit;text-decoration:none;}
+  img,svg{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .placeholder-note{
+    background:#FFF8E6;
+    color:#8A6400;
+    text-align:center;
+    font-size:13px;
+    padding:8px 16px;
+  }
+
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:rgba(255,255,255,.96);
+    border-bottom:1px solid var(--border);
+    backdrop-filter:blur(4px);
+  }
+  nav.wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    height:72px;
+  }
+  .logo{
+    display:flex;align-items:center;gap:10px;
+    font-weight:700;font-size:18px;color:var(--navy);
+  }
+  .logo-mark{
+    width:40px;height:40px;border-radius:8px;
+    background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;
+    font-size:14px;font-weight:700;
+  }
+  .nav-links{display:flex;align-items:center;gap:32px;}
+  .nav-links a{font-size:15px;color:var(--text);}
+  .nav-links a:hover{color:var(--navy);}
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    padding:11px 24px;border-radius:999px;
+    font-size:15px;font-weight:600;
+    border:1.5px solid transparent;
+    cursor:pointer;
+  }
+  .btn-primary{background:var(--navy);color:#fff;}
+  .btn-primary:hover{background:var(--navy-dark);}
+  .btn-outline{border-color:var(--navy);color:var(--navy);background:transparent;}
+  .btn-outline:hover{background:var(--teal-light);}
+  .nav-cta{display:none;}
+  .hamburger{
+    display:none;background:none;border:none;cursor:pointer;
+    width:40px;height:40px;align-items:center;justify-content:center;
+  }
+  .hamburger span, .hamburger span::before, .hamburger span::after{
+    content:"";display:block;width:22px;height:2px;background:var(--navy);
+    position:relative;transition:.2s;
+  }
+  .hamburger span::before{position:absolute;top:-7px;}
+  .hamburger span::after{position:absolute;top:7px;}
+  #mobile-menu{display:none;flex-direction:column;gap:4px;padding:8px 24px 20px;border-top:1px solid var(--border);}
+  #mobile-menu a{padding:10px 0;font-size:15px;border-bottom:1px solid var(--border);}
+  #mobile-menu .btn{margin-top:10px;}
+  #nav-toggle:checked ~ #mobile-menu{display:flex;}
+
+  /* ---------- Sections generic ---------- */
+  section{padding:80px 0;}
+  .eyebrow{
+    color:var(--teal);font-weight:700;font-size:13px;
+    letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;
+  }
+  h1{font-size:40px;line-height:1.35;color:var(--navy);margin:0 0 20px;}
+  h2{font-size:30px;color:var(--navy);margin:0 0 16px;}
+  p.lead{font-size:17px;color:var(--muted);margin:0 0 28px;max-width:560px;}
+  .section-head{max-width:640px;margin:0 auto 48px;text-align:center;}
+  .section-head p{color:var(--muted);font-size:16px;}
+
+  /* ---------- Hero ---------- */
+  #hero{padding-top:64px;padding-bottom:64px;background:linear-gradient(180deg,var(--teal-light) 0%,#fff 70%);}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;}
+  .photo-placeholder{
+    aspect-ratio:4/3;border-radius:var(--radius);
+    background:repeating-linear-gradient(45deg,#EEF3F5,#EEF3F5 10px,#E4ECEF 10px,#E4ECEF 20px);
+    border:1px dashed #B9C7CD;
+    display:flex;align-items:center;justify-content:center;
+    color:var(--muted);font-size:14px;text-align:center;padding:16px;
+  }
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;}
+  .about-grid .photo-placeholder{aspect-ratio:1/1;}
+
+  /* ---------- Services ---------- */
+  #services{background:#F7FAFB;}
+  .service-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:40px;
+  }
+  .service-card{
+    background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+    padding:24px;
+  }
+  .service-card .cat-name{font-weight:700;color:var(--navy);font-size:17px;margin-bottom:8px;}
+  .service-card .cat-desc{font-size:14px;color:var(--muted);}
+  .center-cta{text-align:center;}
+
+  /* ---------- Lab ---------- */
+  .lab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:40px;}
+  .lab-card .photo-placeholder{aspect-ratio:4/3;margin-bottom:14px;}
+  .lab-card .lab-name{font-weight:700;color:var(--navy);margin-bottom:6px;}
+  .lab-card .lab-desc{font-size:14px;color:var(--muted);}
+
+  /* ---------- News ---------- */
+  #news{background:#F7FAFB;}
+  .news-empty{
+    border:1px dashed #B9C7CD;border-radius:var(--radius);
+    padding:48px 24px;text-align:center;color:var(--muted);
+    max-width:640px;margin:0 auto 32px;background:#fff;
+  }
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;}
+  .contact-info-list{list-style:none;padding:0;margin:0 0 28px;}
+  .contact-info-list li{
+    padding:14px 0;border-bottom:1px solid var(--border);
+    display:flex;gap:14px;font-size:15px;
+  }
+  .contact-info-list li .label{color:var(--navy);font-weight:600;min-width:84px;}
+  .contact-info-list li .tbd{color:var(--muted);font-style:normal;}
+  form.inquiry{
+    background:#F7FAFB;border:1px solid var(--border);border-radius:var(--radius);
+    padding:28px;
+  }
+  .field{margin-bottom:18px;}
+  .field label{display:block;font-size:14px;font-weight:600;margin-bottom:6px;color:var(--text);}
+  .field .optional{color:var(--muted);font-weight:400;font-size:12px;}
+  .field input, .field select, .field textarea{
+    width:100%;padding:11px 12px;border:1px solid var(--border);border-radius:8px;
+    font-size:15px;font-family:inherit;background:#fff;
+  }
+  .field textarea{resize:vertical;min-height:90px;}
+  .field .hint{font-size:12px;color:var(--muted);margin-top:4px;}
+  .form-note{font-size:12px;color:var(--muted);margin-top:10px;text-align:center;}
+
+  footer{
+    background:var(--navy-dark);color:#CBD8DE;padding:40px 0 28px;font-size:13px;
+  }
+  footer .wrap{display:flex;flex-direction:column;gap:10px;align-items:center;text-align:center;}
+  footer a{color:#CBD8DE;text-decoration:underline;}
+  footer .draft-tag{color:#9FB3BB;}
+
+  @media (max-width:860px){
+    .nav-links{display:none;}
+    .nav-cta{display:none;}
+    .hamburger{display:flex;}
+    h1{font-size:30px;}
+    h2{font-size:24px;}
+    .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px;}
+    .about-grid{direction:ltr;}
+    .service-grid{grid-template-columns:repeat(2,1fr);}
+    .lab-grid{grid-template-columns:1fr;}
+    section{padding:56px 0;}
+  }
+  @media (max-width:480px){
+    .service-grid{grid-template-columns:1fr;}
+    .hero-ctas{flex-direction:column;align-items:stretch;}
+  }
+</style>
+</head>
+<body>
+
+<div class="placeholder-note">設計展示版本｜內容與聯絡資訊待公司確認後更新，非正式上線頁面</div>
+
+<header>
+  <input type="checkbox" id="nav-toggle" style="display:none;">
+  <nav class="wrap">
+    <a href="#hero" class="logo">
+      <span class="logo-mark">欣生</span>
+      欣生高雄
+    </a>
+    <div class="nav-links">
+      <a href="#about">關於我們</a>
+      <a href="#services">檢驗服務</a>
+      <a href="#lab">實驗室與設備</a>
+      <a href="#news">最新消息</a>
+      <a href="#contact" class="btn btn-primary">聯絡我們</a>
+    </div>
+    <label for="nav-toggle" class="hamburger" aria-label="開啟選單"><span></span></label>
+  </nav>
+  <div id="mobile-menu" class="wrap">
+    <a href="#about">關於我們</a>
+    <a href="#services">檢驗服務</a>
+    <a href="#lab">實驗室與設備</a>
+    <a href="#news">最新消息</a>
+    <a href="#contact" class="btn btn-primary">聯絡我們</a>
+  </div>
+</header>
+
+<!-- 1. 首屏主視覺 -->
+<section id="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">欣生生物科技股份有限公司 高雄分公司</div>
+      <h1>欣生高雄｜濫用藥物尿液檢驗服務</h1>
+      <p class="lead">提供企業與機關濫用藥物尿液初步篩檢及確認檢驗，歡迎洽詢檢驗項目與送驗安排。</p>
+      <div class="hero-ctas">
+        <a href="#services" class="btn btn-primary">查看檢驗服務</a>
+        <a href="#contact" class="btn btn-outline">聯絡我們</a>
+      </div>
+    </div>
+    <div class="photo-placeholder">實驗室實景照片<br>（待提供）</div>
+  </div>
+</section>
+
+<!-- 2. 關於欣生高雄 -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="photo-placeholder">公司／團隊／實驗室照片<br>（待提供）</div>
+    <div>
+      <div class="eyebrow">關於欣生高雄</div>
+      <h2>專注濫用藥物尿液檢驗的專業團隊</h2>
+      <p class="lead" style="max-width:520px;">欣生生物科技股份有限公司高雄分公司專注於濫用藥物尿液檢驗，透過檢體管理、分析檢驗及報告審核，提供企業與機關委託檢驗服務，並持續擴充檢驗項目與分析設備。</p>
+      <a href="#" class="btn btn-outline">認識我們</a>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 檢驗服務 -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">檢驗服務</div>
+      <h2>可洽詢的檢驗類別</h2>
+      <p>以下分類為網站導覽用途，正式受理範圍以公司確認資料為準。</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card"><div class="cat-name">安非他命類</div><div class="cat-desc">簡短檢驗介紹（待補）</div></div>
+      <div class="service-card"><div class="cat-name">MDMA 類</div><div class="cat-desc">簡短檢驗介紹（待補）</div></div>
+      <div class="service-card"><div class="cat-name">愷他命類</div><div class="cat-desc">簡短檢驗介紹（待補）</div></div>
+      <div class="service-card"><div class="cat-name">鴉片類</div><div class="cat-desc">簡短檢驗介紹（待補）</div></div>
+      <div class="service-card"><div class="cat-name">大麻類</div><div class="cat-desc">簡短檢驗介紹（待補）</div></div>
+      <div class="service-card"><div class="cat-name">依托咪酯類</div><div class="cat-desc">簡短檢驗介紹（待補）</div></div>
+    </div>
+    <div class="center-cta"><a href="#" class="btn btn-primary">檢驗項目與送驗說明</a></div>
+  </div>
+</section>
+
+<!-- 4. 實驗室與設備 -->
+<section id="lab">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">實驗室與設備</div>
+      <h2>以實際環境與設備說明分析能力</h2>
+    </div>
+    <div class="lab-grid">
+      <div class="lab-card">
+        <div class="photo-placeholder">設備照片（待提供）</div>
+        <div class="lab-name">LC-MS/MS</div>
+        <div class="lab-desc">液相層析串聯質譜儀</div>
+      </div>
+      <div class="lab-card">
+        <div class="photo-placeholder">設備照片（待提供）</div>
+        <div class="lab-name">GC-MS</div>
+        <div class="lab-desc">氣相層析質譜儀</div>
+      </div>
+      <div class="lab-card">
+        <div class="photo-placeholder">設備照片（待提供）</div>
+        <div class="lab-name">GC-MS/MS</div>
+        <div class="lab-desc">氣相層析串聯質譜儀</div>
+      </div>
+    </div>
+    <div class="center-cta"><a href="#" class="btn btn-outline">了解實驗室與設備</a></div>
+  </div>
+</section>
+
+<!-- 5. 最新消息 -->
+<section id="news">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">最新消息</div>
+      <h2>服務公告與公司動態</h2>
+    </div>
+    <div class="news-empty">目前尚無最新消息，請關注後續公告。</div>
+    <div class="center-cta"><a href="#" class="btn btn-outline">查看全部消息</a></div>
+  </div>
+</section>
+
+<!-- 6. 聯絡我們 -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">聯絡我們</div>
+      <h2>有檢驗委託需求？</h2>
+      <p class="lead">歡迎與我們聯繫，確認檢驗項目與送驗安排。</p>
+      <ul class="contact-info-list">
+        <li><span class="label">電話</span><span class="tbd">（確認中）</span></li>
+        <li><span class="label">Email</span><span class="tbd">（確認中）</span></li>
+        <li><span class="label">地址</span><span class="tbd">（確認中）</span></li>
+        <li><span class="label">服務時間</span><span class="tbd">（確認中）</span></li>
+      </ul>
+    </div>
+    <form class="inquiry" onsubmit="return false;">
+      <div class="field">
+        <label>委託單位 <span class="optional">選填</span></label>
+        <input type="text" name="org">
+      </div>
+      <div class="field">
+        <label>聯絡人</label>
+        <input type="text" name="contact" required>
+      </div>
+      <div class="field">
+        <label>聯絡電話／電子郵件</label>
+        <input type="text" name="contact_info" required>
+        <div class="hint">至少提供一種有效聯絡方式</div>
+      </div>
+      <div class="field">
+        <label>委託類型</label>
+        <select name="type">
+          <option>企業</option>
+          <option>機關</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>詢問項目 <span class="optional">可選擇檢驗類別或填寫不確定</span></label>
+        <select name="category">
+          <option>安非他命類</option>
+          <option>MDMA 類</option>
+          <option>愷他命類</option>
+          <option>鴉片類</option>
+          <option>大麻類</option>
+          <option>依托咪酯類</option>
+          <option>不確定</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>預估件數 <span class="optional">選填</span></label>
+        <input type="text" name="qty">
+      </div>
+      <div class="field">
+        <label>需求說明</label>
+        <textarea name="note" placeholder="簡述需求，請勿填入受檢者敏感資料"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;">送出洽詢</button>
+      <div class="form-note">此版本為設計展示，尚未啟用實際寄送功能</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>欣生生物科技股份有限公司 高雄分公司</div>
+    <div><a href="#">隱私權政策</a></div>
+    <div class="draft-tag">本頁為網站設計展示版本，正式內容以公司確認後發布版本為準。</div>
+  </div>
+</footer>
+
+</body>
+</html>

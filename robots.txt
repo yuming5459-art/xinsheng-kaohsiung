@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yuming5459-art.github.io/xinsheng-kaohsiung/sitemap.xml
